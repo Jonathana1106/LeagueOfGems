@@ -16,6 +16,10 @@ public:
 public:
 
     SDL_Texture* tree1;
+    SDL_Texture* obstacule1;
+    SDL_Texture* obstacule2;
+    SDL_Texture* obstacule3;
+
     SDL_Rect position;
 
     int map[15][36];

@@ -6,6 +6,7 @@
 #include <SDL_events.h>
 #include "SDL.h"
 #include "../SetUp/Map.h"
+#include "../Internal_logic/Pathfinding.h"
 
 class player {
 
@@ -17,8 +18,9 @@ public:
     int contX, contY, reg;
     SDL_Rect position;
     SDL_Texture *user1, *user2, *user3;
-    Map *map;
 
+    Map* map;
+    Pathfinding *pathfinding;
 
 };
 

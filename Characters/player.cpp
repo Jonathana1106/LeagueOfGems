@@ -10,7 +10,9 @@ void player::init() {
     user1 = TextureManager::LoadTexture("../Assets/warrior1.bmp");
     user2 = TextureManager::LoadTexture("../Assets/warrior2.bmp");
     user3 = TextureManager::LoadTexture("../Assets/warrior3.bmp");
+
     map = new Map();
+    pathfinding = new Pathfinding();
 
 }
 
@@ -59,7 +61,8 @@ void player::move() {
 }
 
 void player::render() {
-    map->DrawMap();
-    SDL_RenderCopy(Game::renderer, user1, NULL, &position);
 
+    pathfinding->start();
+
+    //SDL_RenderCopy(Game::renderer, user1, NULL, &position);
 }

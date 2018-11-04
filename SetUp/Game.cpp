@@ -5,7 +5,7 @@ SDL_Renderer* Game::renderer = nullptr;
 
 void Game::init(const char *title, int xpos, int ypos, int width, int height) {
     player1 = new player;
-    //map = new Map();
+
     position1.w = position1.h = position2.w = position2.h = position3.w = position5.w = position5.h = position6.w = position6.h =
     position7.w = position9.w = position9.h = position10.w = position10.h = position11.w = position13.w = position13.h =
     position14.w = position14.h = position15.w = position17.w = position17.h = position18.w = position18.h = position19.w =
@@ -90,7 +90,6 @@ void Game::render() {
     SDL_RenderCopy(renderer, background, NULL, &position30);
     SDL_RenderCopy(renderer, background, NULL, &position31);
     player1->render();
-  //  map->DrawMap();
     SDL_RenderPresent(renderer);
 
 }
