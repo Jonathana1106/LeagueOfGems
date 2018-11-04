@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/44/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jonathan/CLionProjects/LOG
+CMAKE_SOURCE_DIR = /home/nyverk/CLionProjects/LOG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jonathan/CLionProjects/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nyverk/CLionProjects/LOG/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/jonathan/CLionProjects/LOG/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/44/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/44/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonathan/CLionProjects/LOG/cmake-build-debug/CMakeFiles /home/jonathan/CLionProjects/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonathan/CLionProjects/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,194 @@ LOG/fast:
 	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/build
 .PHONY : LOG/fast
 
-main.o: main.cpp.o
+Characters/enemy.o: Characters/enemy.cpp.o
 
-.PHONY : main.o
+.PHONY : Characters/enemy.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/main.cpp.o
-.PHONY : main.cpp.o
+Characters/enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/enemy.cpp.o
+.PHONY : Characters/enemy.cpp.o
 
-main.i: main.cpp.i
+Characters/enemy.i: Characters/enemy.cpp.i
 
-.PHONY : main.i
+.PHONY : Characters/enemy.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/main.cpp.i
-.PHONY : main.cpp.i
+Characters/enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/enemy.cpp.i
+.PHONY : Characters/enemy.cpp.i
 
-main.s: main.cpp.s
+Characters/enemy.s: Characters/enemy.cpp.s
 
-.PHONY : main.s
+.PHONY : Characters/enemy.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/main.cpp.s
-.PHONY : main.cpp.s
+Characters/enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/enemy.cpp.s
+.PHONY : Characters/enemy.cpp.s
+
+Characters/player.o: Characters/player.cpp.o
+
+.PHONY : Characters/player.o
+
+# target to build an object file
+Characters/player.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/player.cpp.o
+.PHONY : Characters/player.cpp.o
+
+Characters/player.i: Characters/player.cpp.i
+
+.PHONY : Characters/player.i
+
+# target to preprocess a source file
+Characters/player.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/player.cpp.i
+.PHONY : Characters/player.cpp.i
+
+Characters/player.s: Characters/player.cpp.s
+
+.PHONY : Characters/player.s
+
+# target to generate assembly for a file
+Characters/player.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/player.cpp.s
+.PHONY : Characters/player.cpp.s
+
+InternalLogic/Pathfinding.o: InternalLogic/Pathfinding.cpp.o
+
+.PHONY : InternalLogic/Pathfinding.o
+
+# target to build an object file
+InternalLogic/Pathfinding.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o
+.PHONY : InternalLogic/Pathfinding.cpp.o
+
+InternalLogic/Pathfinding.i: InternalLogic/Pathfinding.cpp.i
+
+.PHONY : InternalLogic/Pathfinding.i
+
+# target to preprocess a source file
+InternalLogic/Pathfinding.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.i
+.PHONY : InternalLogic/Pathfinding.cpp.i
+
+InternalLogic/Pathfinding.s: InternalLogic/Pathfinding.cpp.s
+
+.PHONY : InternalLogic/Pathfinding.s
+
+# target to generate assembly for a file
+InternalLogic/Pathfinding.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.s
+.PHONY : InternalLogic/Pathfinding.cpp.s
+
+SetUp/Game.o: SetUp/Game.cpp.o
+
+.PHONY : SetUp/Game.o
+
+# target to build an object file
+SetUp/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Game.cpp.o
+.PHONY : SetUp/Game.cpp.o
+
+SetUp/Game.i: SetUp/Game.cpp.i
+
+.PHONY : SetUp/Game.i
+
+# target to preprocess a source file
+SetUp/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Game.cpp.i
+.PHONY : SetUp/Game.cpp.i
+
+SetUp/Game.s: SetUp/Game.cpp.s
+
+.PHONY : SetUp/Game.s
+
+# target to generate assembly for a file
+SetUp/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Game.cpp.s
+.PHONY : SetUp/Game.cpp.s
+
+SetUp/Map.o: SetUp/Map.cpp.o
+
+.PHONY : SetUp/Map.o
+
+# target to build an object file
+SetUp/Map.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Map.cpp.o
+.PHONY : SetUp/Map.cpp.o
+
+SetUp/Map.i: SetUp/Map.cpp.i
+
+.PHONY : SetUp/Map.i
+
+# target to preprocess a source file
+SetUp/Map.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Map.cpp.i
+.PHONY : SetUp/Map.cpp.i
+
+SetUp/Map.s: SetUp/Map.cpp.s
+
+.PHONY : SetUp/Map.s
+
+# target to generate assembly for a file
+SetUp/Map.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Map.cpp.s
+.PHONY : SetUp/Map.cpp.s
+
+SetUp/TextureManager.o: SetUp/TextureManager.cpp.o
+
+.PHONY : SetUp/TextureManager.o
+
+# target to build an object file
+SetUp/TextureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o
+.PHONY : SetUp/TextureManager.cpp.o
+
+SetUp/TextureManager.i: SetUp/TextureManager.cpp.i
+
+.PHONY : SetUp/TextureManager.i
+
+# target to preprocess a source file
+SetUp/TextureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.i
+.PHONY : SetUp/TextureManager.cpp.i
+
+SetUp/TextureManager.s: SetUp/TextureManager.cpp.s
+
+.PHONY : SetUp/TextureManager.s
+
+# target to generate assembly for a file
+SetUp/TextureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.s
+.PHONY : SetUp/TextureManager.cpp.s
+
+SetUp/main.o: SetUp/main.cpp.o
+
+.PHONY : SetUp/main.o
+
+# target to build an object file
+SetUp/main.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/main.cpp.o
+.PHONY : SetUp/main.cpp.o
+
+SetUp/main.i: SetUp/main.cpp.i
+
+.PHONY : SetUp/main.i
+
+# target to preprocess a source file
+SetUp/main.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/main.cpp.i
+.PHONY : SetUp/main.cpp.i
+
+SetUp/main.s: SetUp/main.cpp.s
+
+.PHONY : SetUp/main.s
+
+# target to generate assembly for a file
+SetUp/main.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/main.cpp.s
+.PHONY : SetUp/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... LOG"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Characters/enemy.o"
+	@echo "... Characters/enemy.i"
+	@echo "... Characters/enemy.s"
+	@echo "... Characters/player.o"
+	@echo "... Characters/player.i"
+	@echo "... Characters/player.s"
+	@echo "... InternalLogic/Pathfinding.o"
+	@echo "... InternalLogic/Pathfinding.i"
+	@echo "... InternalLogic/Pathfinding.s"
+	@echo "... SetUp/Game.o"
+	@echo "... SetUp/Game.i"
+	@echo "... SetUp/Game.s"
+	@echo "... SetUp/Map.o"
+	@echo "... SetUp/Map.i"
+	@echo "... SetUp/Map.s"
+	@echo "... SetUp/TextureManager.o"
+	@echo "... SetUp/TextureManager.i"
+	@echo "... SetUp/TextureManager.s"
+	@echo "... SetUp/main.o"
+	@echo "... SetUp/main.i"
+	@echo "... SetUp/main.s"
 .PHONY : help
 
 

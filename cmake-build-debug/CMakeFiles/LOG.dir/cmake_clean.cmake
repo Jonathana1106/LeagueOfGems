@@ -1,5 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LOG.dir/main.cpp.o"
+  "CMakeFiles/LOG.dir/SetUp/main.cpp.o"
+  "CMakeFiles/LOG.dir/SetUp/Game.cpp.o"
+  "CMakeFiles/LOG.dir/Characters/player.cpp.o"
+  "CMakeFiles/LOG.dir/Characters/enemy.cpp.o"
+  "CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o"
+  "CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
+  "CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
   "LOG.pdb"
   "LOG"
 )

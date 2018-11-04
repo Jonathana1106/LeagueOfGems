@@ -8,42 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/jonathan/CLionProjects/LOG/cmake-build-debug"/>
+				<Option working_dir="/home/nyverk/CLionProjects/LOG/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/jonathan/CLionProjects/LOG/cmake-build-debug"/>
+				<Option working_dir="/home/nyverk/CLionProjects/LOG/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/jonathan/CLionProjects/LOG/cmake-build-debug"/>
+				<Option working_dir="/home/nyverk/CLionProjects/LOG/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LOG">
-				<Option output="/home/jonathan/CLionProjects/LOG/cmake-build-debug/LOG" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jonathan/CLionProjects/LOG/cmake-build-debug"/>
+				<Option output="/home/nyverk/CLionProjects/LOG/cmake-build-debug/LOG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nyverk/CLionProjects/LOG/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -54,19 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LOG"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LOG"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LOG/fast">
-				<Option output="/home/jonathan/CLionProjects/LOG/cmake-build-debug/LOG" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jonathan/CLionProjects/LOG/cmake-build-debug"/>
+				<Option output="/home/nyverk/CLionProjects/LOG/cmake-build-debug/LOG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nyverk/CLionProjects/LOG/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -77,17 +79,53 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LOG/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jonathan/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 LOG/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/nyverk/CLionProjects/LOG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jonathan/CLionProjects/LOG/main.cpp">
+		<Unit filename="/home/nyverk/CLionProjects/LOG/Characters/enemy.cpp">
 			<Option target="LOG"/>
 		</Unit>
-		<Unit filename="/home/jonathan/CLionProjects/LOG/CMakeLists.txt">
+		<Unit filename="/home/nyverk/CLionProjects/LOG/Characters/enemy.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/Characters/player.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/Characters/player.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/Game.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/Game.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/Map.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/Map.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/SetUp/main.cpp">
+			<Option target="LOG"/>
+		</Unit>
+		<Unit filename="/home/nyverk/CLionProjects/LOG/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
