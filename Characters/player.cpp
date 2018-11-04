@@ -26,43 +26,62 @@ void player::move() {
         contY = 0;
     }
 
+
     SDL_PumpEvents();
     if(SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)){
         SDL_GetMouseState(&x, &y);
+        path_destiny = pathfinding->start(position.y/35, position.x/35,y/35, x/35);
+
     }
 
-    if (position.x < x){
+    if(!path_destiny.empty()){
+
+        p = path_destiny.top();
+        if(position.x == p.second*35 && position.y == p.first*35){
+
+            path_destiny.pop();
+        }
+
+    }
+
+    if (position.x < p.second*35){
         contX ++;
         if(contX % 3 == 0) {
             position.x ++;
+
         }
     }
 
-    if (position.x > x){
+    if (position.x > p.second*35){
         contX ++;
         if(contX % 3 == 0) {
             position.x --;
-         }
-    }
 
-    if (position.y < y){
-        contY ++;
-        if(contY % 3 == 0) {
-            position.y ++;
         }
     }
 
-    if (position.y > y){
+    if (position.y < p.first*35){
+        contY ++;
+        if(contY % 3 == 0) {
+            position.y ++;
+
+        }
+    }
+
+    if (position.y > p.first*35){
         contY ++;
         if(contY % 3 == 0) {
             position.y --;
         }
+
     }
 }
 
 void player::render() {
 
-    pathfinding->start();
+    //pathfinding->start();
 
-    //SDL_RenderCopy(Game::renderer, user1, NULL, &position);
+    //map->LoadMap(pathfinding->main_grid);
+    map->DrawMap();
+    SDL_RenderCopy(Game::renderer, user1, NULL, &position);
 }

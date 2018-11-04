@@ -19,6 +19,9 @@ public:
     SDL_Rect position;
     SDL_Texture *user1, *user2, *user3;
 
+    std::stack<Pair> path_destiny;
+    std::pair<int, int> p;
+
     Map* map;
     Pathfinding *pathfinding;
 
