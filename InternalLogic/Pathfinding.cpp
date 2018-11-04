@@ -6,39 +6,6 @@
 #include "Pathfinding.h"
 
 
-
-
-/* Description of the Grid-
-     0 --> The cell is not blocked
-     1 --> The cell is blocked
-     10 to 25 --> Soldiers
-     26 to 71 --> Enemies
-     */
-
-int main_grid[ROW][COL] =
-        {
-                //// 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 COL
-                /*0*/{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*1*/{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*2*/{0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*3*/{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*4*/{0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*5*/{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*6*/{1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*7*/{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*8*/{0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*9*/{0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*10*/{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*11*/{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*12*/{1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*13*/{0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                /*14*/{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-                /*Row*/
-        };
-
-
-
-
 // Creating a shortcut for pair<int, pair<int, int>> type
 typedef std::pair<double, std::pair<int, int> > pPair;
 
@@ -659,7 +626,7 @@ void Pathfinding::walk(std::stack<Pair> path, int soldier)
 {
     int refresh_grid[ROW][COL];
 
-    while (!path.empty() && !ended) {
+    while (!path.empty()) {
 
         std::pair<int, int> p = path.top();
         path.pop();
@@ -682,7 +649,7 @@ void Pathfinding::walk(std::stack<Pair> path, int soldier)
         map->DrawMap();
         //usleep(2000000);
     }
-    ended = true;
+    //ended = true;
 }
 
 Pathfinding::Pathfinding() {
@@ -690,7 +657,7 @@ Pathfinding::Pathfinding() {
 
     map = new Map();
 
-    src = std::make_pair(8, 0);
+    //src = std::make_pair(8, 0);
     soldeir1 = std::make_pair(8, 0);
     this->soldeir2 = std::make_pair(8, 0);
     soldeir3 = std::make_pair(8, 0);
@@ -708,14 +675,20 @@ Pathfinding::Pathfinding() {
     soldeir15 = std::make_pair(8, 0);
 
     // Destination is the left-most top-most corner
-    dest = std::make_pair(0, 30);
+
     ended = false;
+
+    x = y = 35;
 
 }
 
-void Pathfinding::start() {
+std::stack<Pair> Pathfinding::start(int source_x, int source_y, int mouse_x, int mouse_y) {
 
-    this->path_destiny = Pathfinding::aStarSearch(main_grid, src, dest);
+    src = std::make_pair(source_x, source_y);
+    dest = std::make_pair(mouse_x, mouse_y);
 
-    Pathfinding::walk(path_destiny, 14);
+    this->path_destiny = Pathfinding::aStarSearch(map->lvl1, src, dest);
+    return path_destiny;
+    //Pathfinding::walk(path_destiny, 14);
+
 }
