@@ -11,6 +11,7 @@ CMakeFiles/LOG.dir/Characters/player.cpp.o: ../SetUp/Game.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: ../SetUp/Levels.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: ../SetUp/Map.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: ../SetUp/TextureManager.h
+CMakeFiles/LOG.dir/Characters/player.cpp.o: ../War.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -57,8 +58,11 @@ CMakeFiles/LOG.dir/Characters/player.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/LOG.dir/Characters/player.cpp.o: /usr/include/SDL2/close_code.h
 
-CMakeFiles/LOG.dir/Components/ECS.cpp.o: ../Components/ECS.cpp
-CMakeFiles/LOG.dir/Components/ECS.cpp.o: ../Components/ECS.h
+CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o: ../InternalLogic/Dijkstra.cpp
+CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o: ../InternalLogic/Dijkstra.h
+
+CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o: ../InternalLogic/Kruskal.cpp
+CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o: ../InternalLogic/Kruskal.h
 
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: ../InternalLogic/Pathfinding.cpp
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: ../InternalLogic/Pathfinding.h
@@ -108,12 +112,17 @@ CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: /usr/include/SDL2/SDL_video.
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: /usr/include/SDL2/close_code.h
 
+CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o: ../InternalLogic/Prim.cpp
+CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o: ../InternalLogic/Prim.h
+
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../Characters/player.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../InternalLogic/Pathfinding.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../SetUp/Game.cpp
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../SetUp/Game.h
+CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../SetUp/Levels.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../SetUp/Map.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../SetUp/TextureManager.h
+CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../War.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -167,6 +176,7 @@ CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: ../SetUp/Levels.cpp
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: ../SetUp/Levels.h
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: ../SetUp/Map.h
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: ../SetUp/TextureManager.h
+CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: ../War.h
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -220,6 +230,7 @@ CMakeFiles/LOG.dir/SetUp/Map.cpp.o: ../SetUp/Levels.h
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: ../SetUp/Map.cpp
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: ../SetUp/Map.h
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: ../SetUp/TextureManager.h
+CMakeFiles/LOG.dir/SetUp/Map.cpp.o: ../War.h
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -325,6 +336,7 @@ CMakeFiles/LOG.dir/SetUp/main.cpp.o: ../SetUp/Levels.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: ../SetUp/Map.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: ../SetUp/TextureManager.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: ../SetUp/main.cpp
+CMakeFiles/LOG.dir/SetUp/main.cpp.o: ../War.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/SDL.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/SDL_assert.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/SDL_atomic.h
@@ -370,4 +382,7 @@ CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/SDL_version.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/SDL_video.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/begin_code.h
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: /usr/include/SDL2/close_code.h
+
+CMakeFiles/LOG.dir/War.cpp.o: ../War.cpp
+CMakeFiles/LOG.dir/War.cpp.o: ../War.h
 

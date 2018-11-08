@@ -30,6 +30,7 @@ public:
     *player13, *player14, *player15;
     Map *map;
     TextureManager *textureManager;
+
 };
 
 #endif //LOG_GAME_H

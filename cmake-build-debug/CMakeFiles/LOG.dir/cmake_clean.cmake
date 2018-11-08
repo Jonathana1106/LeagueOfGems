@@ -7,7 +7,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
   "CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
   "CMakeFiles/LOG.dir/SetUp/Levels.cpp.o"
-  "CMakeFiles/LOG.dir/Components/ECS.cpp.o"
+  "CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o"
+  "CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o"
+  "CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o"
+  "CMakeFiles/LOG.dir/War.cpp.o"
   "LOG.pdb"
   "LOG"
 )

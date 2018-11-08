@@ -5,13 +5,14 @@
 
 using namespace std;
 
-void player::init(int posX, int posY) {
+void player::init(int posX, int posY, int ID) {
 
+    id = ID;
     position.h = position.w = 35;
     position.x = x = posX;
     position.y = y = posY;
     p.second = posX / 35;
-    p.first = posY /35;
+    p.first = posY / 35;
     contX = contY = attackLeft = attackRight = 0;
     attackR = attackL = false;
     stat = TextureManager::LoadTexture("../Assets/static.bmp");
@@ -46,7 +47,7 @@ void player::move() {
         right++;
         leftB = upB = downB = false;
         rightB = true;
-        if (contX % 1 == 0) {
+        if (contX % 10 == 0) {
             position.x++;
         }
     }
@@ -57,7 +58,7 @@ void player::move() {
         left++;
         rightB = upB = downB = false;
         leftB = true;
-        if (contX % 1 == 0) {
+        if (contX % 10 == 0) {
             position.x--;
         }
     }
@@ -68,7 +69,7 @@ void player::move() {
         down++;
         leftB = rightB = upB = false;
         downB = true;
-        if (contY % 1 == 0) {
+        if (contY % 10 == 0) {
             position.y++;
         }
     }
@@ -79,12 +80,12 @@ void player::move() {
         up++;
         leftB = rightB = downB = false;
         upB = true;
-        if (contY % 1 == 0) {
+        if (contY % 10 == 0) {
             position.y--;
         }
     }
 
-    if(position.y == (y/35)*35 && position.x == (x/35)*35){
+    if (position.y == (y / 35) * 35 && position.x == (x / 35) * 35) {
         rightB = leftB = upB = downB = false;
         right = left = up = down = 0;
     }
@@ -93,124 +94,132 @@ void player::move() {
 void player::render() {
 
     map->DrawMap();
-    if(!rightB && !leftB && !upB && !downB && !attackL && !attackR) {
+    if (!rightB && !leftB && !upB && !downB && !attackL && !attackR) {
         SDL_RenderCopy(Game::renderer, stat, NULL, &position);
-    }else{
+    } else {
         animation();
     }
     attack();
 }
 
 void player::animation() {
-    if(rightB){
-        if(right <= 5){
+    if (rightB) {
+        if (right <= 150) {
             SDL_RenderCopy(Game::renderer, right1, NULL, &position);
         }
-        if(right > 5 && right <= 10){
+        if (right > 150 && right <= 300) {
             SDL_RenderCopy(Game::renderer, right2, NULL, &position);
         }
-        if(right > 10 && right <=15){
+        if (right > 300 && right <= 450) {
             SDL_RenderCopy(Game::renderer, right3, NULL, &position);
         }
-        if(right > 15 && right <= 20){
+        if (right > 450 && right <= 600) {
             SDL_RenderCopy(Game::renderer, right2, NULL, &position);
         }
-        if (right == 20){
+        if (right == 600) {
             right = 0;
         }
     }
-    if(leftB){
-        if(left <= 5){
+    if (leftB) {
+        if (left <= 150) {
             SDL_RenderCopy(Game::renderer, left1, NULL, &position);
         }
-        if(left > 5 && left <= 10){
+        if (left > 150 && left <= 300) {
             SDL_RenderCopy(Game::renderer, left2, NULL, &position);
         }
-        if(left > 10 && left <=15){
+        if (left > 300 && left <= 450) {
             SDL_RenderCopy(Game::renderer, left3, NULL, &position);
         }
-        if(left > 15 && left <= 20){
+        if (left > 450 && left <= 600) {
             SDL_RenderCopy(Game::renderer, left2, NULL, &position);
         }
-        if (left == 20){
+        if (left == 600) {
             left = 0;
         }
     }
-    if(upB){
-        if(up <= 5){
+    if (upB) {
+        if (up <= 150) {
             SDL_RenderCopy(Game::renderer, up1, NULL, &position);
         }
-        if(up > 5 && up <= 10){
+        if (up > 150 && up <= 300) {
             SDL_RenderCopy(Game::renderer, up2, NULL, &position);
         }
-        if(up > 10 && up <= 15){
+        if (up > 300 && up <= 450) {
             SDL_RenderCopy(Game::renderer, up3, NULL, &position);
         }
-        if(up > 15 && up <= 20){
+        if (up > 450 && up <= 600) {
             SDL_RenderCopy(Game::renderer, up4, NULL, &position);
         }
-        if(up > 20 && up <= 25){
+        if (up > 600 && up <= 750) {
             SDL_RenderCopy(Game::renderer, up3, NULL, &position);
         }
-        if(up > 25 && up <= 30){
+        if (up > 750 && up <= 900) {
             SDL_RenderCopy(Game::renderer, up2, NULL, &position);
         }
-        if (up == 30){
+        if (up == 900) {
             up = 0;
         }
     }
-    if(downB){
-        if(down <= 5){
+    if (downB) {
+        if (down <= 150) {
             SDL_RenderCopy(Game::renderer, down1, NULL, &position);
         }
-        if(down > 5 && down <= 10){
+        if (down > 150 && down <= 300) {
             SDL_RenderCopy(Game::renderer, down2, NULL, &position);
         }
-        if(down > 10 && down <= 15){
+        if (down > 300 && down <= 450) {
             SDL_RenderCopy(Game::renderer, down3, NULL, &position);
         }
-        if(down > 15 && down <= 20){
+        if (down > 450 && down <= 600) {
             SDL_RenderCopy(Game::renderer, down2, NULL, &position);
         }
-        if (down == 20){
+        if (down == 600) {
             down = 0;
         }
     }
 }
 
 void player::getGem() {
-    if(Levels::Level == 1 && ((position.x == 1190 && position.y == 490) || (position.x ==1225 && position.y == 455))){
-        Levels::Level ++;
+    if (Levels::Level == 1 &&
+        ((position.x == 1190 && position.y == 490) || (position.x == 1225 && position.y == 455))) {
+        Levels::Level++;
         Levels::next = true;
     }
-    if(Levels::Level == 2 && ((position.x == 1190 && position.y == 0) || (position.x ==1225 && position.y == 35))){
-        Levels::Level ++;
+    if (Levels::Level == 2 && ((position.x == 1190 && position.y == 0) || (position.x == 1225 && position.y == 35))) {
+        Levels::Level++;
         Levels::next = true;
     }
-    if(Levels::Level == 3 && ((position.x == 1190 && position.y == 210) || (position.x ==1225 && position.y == 245) || (position.x == 1225 && position.y == 175))){
-        Levels::Level ++;
+    if (Levels::Level == 3 && ((position.x == 1190 && position.y == 210) || (position.x == 1225 && position.y == 245) || (position.x == 1225 && position.y == 175))) {
+        Levels::Level++;
         Levels::next = true;
     }
-    if(Levels::Level == 4 && ((position.x == 1190 && position.y == 245) || (position.x ==1225 && position.y == 280) || (position.x == 1225 && position.y == 210))){
-        Levels::Level ++;
+    if (Levels::Level == 4 && ((position.x == 1190 && position.y == 245) || (position.x == 1225 && position.y == 280) || (position.x == 1225 && position.y == 210))) {
+        Levels::Level++;
         Levels::next = true;
+    }
+    if (Levels::Level == 5 && (position.x == 700 && position.y == 210)){
+        Levels::Level++;
+        Levels::next = true;
+    }
+    if (Levels::Level == 6 && (position.x == 1155 && position.y == 385)){
+        Levels::Level = true;
     }
 }
 
 void player::update() {
 
-    if(contX > 1000000){
+    if (contX > 1000000) {
         contX = 0;
     }
 
-    if(contY > 1000000){
+    if (contY > 1000000) {
         contY = 0;
     }
 
     SDL_PumpEvents();
-    if(SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)){
+    if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
         SDL_GetMouseState(&x, &y);
-        if(y < 525) {
+        if (y < 525) {
             if (Levels::Level == 1) {
                 path_destiny = pathfinding->start(position.y / 35, position.x / 35, y / 35, x / 35);
             } else if (Levels::Level == 2) {
@@ -227,9 +236,9 @@ void player::update() {
         }
     }
 
-    if(!path_destiny.empty()){
+    if (!path_destiny.empty()) {
         p = path_destiny.top();
-        if(position.x == p.second*35 && position.y == p.first*35){
+        if (position.x == p.second * 35 && position.y == p.first * 35) {
             path_destiny.pop();
         }
     }
@@ -239,57 +248,95 @@ void player::update() {
 }
 
 void player::detectEnemy() {
-    if(Map::map[position.y/35][(position.x + 35)/35] > 25 && Map::map[position.y/35][(position.x + 35)/35] < 73){
+    if (Map::map[position.y / 35][(position.x + 35) / 35] > 25 &&
+        Map::map[position.y / 35][(position.x + 35) / 35] < 73) {
+        enemy = Map::map[position.y / 35][(position.x + 35) / 35];
+        leftB = rightB = downB = upB = false;
         attackL = false;
         attackR = true;
         attackRight++;
-    }else if(Map::map[position.y/35][(position.x - 35)/35] > 25 && Map::map[position.y/35][(position.x - 35)/35] < 73){
+
+
+    } else if (Map::map[position.y / 35][(position.x - 35) / 35] > 25 &&
+               Map::map[position.y / 35][(position.x - 35) / 35] < 73) {
+        enemy = Map::map[position.y / 35][(position.x - 35) / 35];
+        leftB = rightB = downB = upB = false;
         attackL = true;
         attackR = false;
-        attackL++;
-    }else if(Map::map[(position.y - 35)/35][position.x/35] > 25 && Map::map[(position.y - 35)/35][position.x/35] < 73){
+        attackLeft++;
+
+    } else if (Map::map[(position.y - 35) / 35][position.x / 35] > 25 &&
+               Map::map[(position.y - 35) / 35][position.x / 35] < 73) {
+        enemy = Map::map[(position.y - 35) / 35][position.x / 35];
+        leftB = rightB = downB = upB = false;
         attackL = false;
         attackR = true;
         attackRight++;
-    }else if(Map::map[(position.y + 35)/35][position.x/35] > 25 && Map::map[(position.y + 35)/35][position.x/35] < 73){
+
+    } else if (Map::map[(position.y + 35) / 35][position.x / 35] > 25 &&
+               Map::map[(position.y + 35) / 35][position.x / 35] < 73) {
+        enemy = Map::map[(position.y + 35) / 35][position.x / 35];
+        leftB = rightB = downB = upB = false;
         attackL = true;
         attackR = false;
-        attackL++;
+        attackLeft++;
     }
 }
 
 void player::attack() {
-    if(attackL){
-        if(attackLeft <= 5){
+    War* war = War::getInstance();
+
+    if (attackL) {
+        if (attackLeft <= 100) {
             SDL_RenderCopy(Game::renderer, attackL1, NULL, &position);
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
         }
-        if(attackLeft > 5 && attackLeft <= 10){
+        if (attackLeft > 100 && attackLeft <= 200) {
             SDL_RenderCopy(Game::renderer, attackL2, NULL, &position);
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
         }
-        if(attackLeft > 10 && attackLeft <=15){
+        if (attackLeft > 200 && attackLeft <= 300) {
             SDL_RenderCopy(Game::renderer, attackL3, NULL, &position);
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
         }
-        if(attackLeft > 15 && attackLeft <= 20){
+        if (attackLeft > 300 && attackLeft <= 400) {
             SDL_RenderCopy(Game::renderer, attackL2, NULL, &position);
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
         }
-        if (attackLeft == 20){
+        if (attackLeft == 400) {
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
             attackLeft = 0;
         }
     }
-    if (attackR){
-        if(attackRight <= 5){
+    if (attackR) {
+        if (attackRight <= 100) {
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
             SDL_RenderCopy(Game::renderer, attackR1, NULL, &position);
         }
-        if(attackRight > 5 && attackRight <= 10){
+        if (attackRight > 100 && attackRight <= 200) {
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
             SDL_RenderCopy(Game::renderer, attackR2, NULL, &position);
         }
-        if(attackRight > 10 && attackRight <=15){
+        if (attackRight > 200 && attackRight <= 300) {
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
             SDL_RenderCopy(Game::renderer, attackR3, NULL, &position);
         }
-        if(attackRight > 15 && attackRight <= 20){
+        if (attackRight > 300 && attackRight <= 400) {
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
             SDL_RenderCopy(Game::renderer, attackR2, NULL, &position);
         }
-        if (attackRight == 20){
+        if (attackRight == 400) {
+            std::cout << enemy << std::endl;
+            war->attackEnemy(id,enemy - 25);
             attackRight = 0;
         }
     }

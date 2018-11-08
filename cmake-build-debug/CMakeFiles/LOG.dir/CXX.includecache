@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/nyverk/CLionProjects/LOG/Characters/player.h
+/home/jonathan/CLionProjects/RepositoryLOG/Characters/player.cpp
+player.h
+/home/jonathan/CLionProjects/RepositoryLOG/Characters/player.h
+../SetUp/TextureManager.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
+../SetUp/Game.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.h
+../SetUp/Levels.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
+
+/home/jonathan/CLionProjects/RepositoryLOG/Characters/player.h
 iostream
 -
 SDL_mouse.h
@@ -14,13 +24,13 @@ SDL_mouse.h
 SDL_events.h
 -
 SDL.h
-/home/nyverk/CLionProjects/LOG/Characters/SDL.h
+/home/jonathan/CLionProjects/RepositoryLOG/Characters/SDL.h
 ../SetUp/Map.h
-/home/nyverk/CLionProjects/LOG/SetUp/Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 ../InternalLogic/Pathfinding.h
-/home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.h
+/home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Pathfinding.h
 
-/home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.h
+/home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Pathfinding.h
 utility
 -
 bits/stdc++.h
@@ -30,49 +40,45 @@ cfloat
 iostream
 -
 ../SetUp/Map.h
-/home/nyverk/CLionProjects/LOG/SetUp/Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 
-/home/nyverk/CLionProjects/LOG/SetUp/Game.cpp
-Game.h
-/home/nyverk/CLionProjects/LOG/SetUp/Game.h
-TextureManager.h
-/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
-
-/home/nyverk/CLionProjects/LOG/SetUp/Game.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.h
 iostream
 -
 SDL2/SDL.h
-/home/nyverk/CLionProjects/LOG/SetUp/SDL2/SDL.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/SDL2/SDL.h
 SDL_video.h
 -
 SDL_image.h
 -
 ../Characters/player.h
-/home/nyverk/CLionProjects/LOG/Characters/player.h
+/home/jonathan/CLionProjects/RepositoryLOG/Characters/player.h
 Map.h
-/home/nyverk/CLionProjects/LOG/SetUp/Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 TextureManager.h
-/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
 
-/home/nyverk/CLionProjects/LOG/SetUp/Levels.cpp
-Levels.h
-/home/nyverk/CLionProjects/LOG/SetUp/Levels.h
-
-/home/nyverk/CLionProjects/LOG/SetUp/Levels.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
 Game.h
-/home/nyverk/CLionProjects/LOG/SetUp/Game.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.h
 TextureManager.h
-/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
+../War.h
+/home/jonathan/CLionProjects/RepositoryLOG/War.h
 
-/home/nyverk/CLionProjects/LOG/SetUp/Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 SDL.h
-/home/nyverk/CLionProjects/LOG/SetUp/SDL.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/SDL.h
 
-/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
 SDL.h
-/home/nyverk/CLionProjects/LOG/SetUp/SDL.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/SDL.h
 Map.h
-/home/nyverk/CLionProjects/LOG/SetUp/Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
+
+/home/jonathan/CLionProjects/RepositoryLOG/War.h
+bits/stdc++.h
+-
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

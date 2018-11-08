@@ -141,9 +141,7 @@ void Map::DrawMap() {
                     TextureManager::Draw(Gem, position);
                     break;
                 case 26 ... 62:
-                    position.w = 20;
                     TextureManager::Draw(enemy, position);
-                    position.w = 35;
                     break;
                 case 10 ... 25:
                         //game->createSoldiers(type, position.x, position.y);

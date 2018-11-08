@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/44/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nyverk/CLionProjects/LOG
+CMAKE_SOURCE_DIR = /home/jonathan/CLionProjects/RepositoryLOG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nyverk/CLionProjects/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/nyverk/CLionProjects/LOG/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/44/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/44/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,32 +177,59 @@ Characters/player.cpp.s:
 	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/player.cpp.s
 .PHONY : Characters/player.cpp.s
 
-Components/ECS.o: Components/ECS.cpp.o
+InternalLogic/Dijkstra.o: InternalLogic/Dijkstra.cpp.o
 
-.PHONY : Components/ECS.o
+.PHONY : InternalLogic/Dijkstra.o
 
 # target to build an object file
-Components/ECS.cpp.o:
-	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Components/ECS.cpp.o
-.PHONY : Components/ECS.cpp.o
+InternalLogic/Dijkstra.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o
+.PHONY : InternalLogic/Dijkstra.cpp.o
 
-Components/ECS.i: Components/ECS.cpp.i
+InternalLogic/Dijkstra.i: InternalLogic/Dijkstra.cpp.i
 
-.PHONY : Components/ECS.i
+.PHONY : InternalLogic/Dijkstra.i
 
 # target to preprocess a source file
-Components/ECS.cpp.i:
-	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Components/ECS.cpp.i
-.PHONY : Components/ECS.cpp.i
+InternalLogic/Dijkstra.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.i
+.PHONY : InternalLogic/Dijkstra.cpp.i
 
-Components/ECS.s: Components/ECS.cpp.s
+InternalLogic/Dijkstra.s: InternalLogic/Dijkstra.cpp.s
 
-.PHONY : Components/ECS.s
+.PHONY : InternalLogic/Dijkstra.s
 
 # target to generate assembly for a file
-Components/ECS.cpp.s:
-	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Components/ECS.cpp.s
-.PHONY : Components/ECS.cpp.s
+InternalLogic/Dijkstra.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.s
+.PHONY : InternalLogic/Dijkstra.cpp.s
+
+InternalLogic/Kruskal.o: InternalLogic/Kruskal.cpp.o
+
+.PHONY : InternalLogic/Kruskal.o
+
+# target to build an object file
+InternalLogic/Kruskal.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o
+.PHONY : InternalLogic/Kruskal.cpp.o
+
+InternalLogic/Kruskal.i: InternalLogic/Kruskal.cpp.i
+
+.PHONY : InternalLogic/Kruskal.i
+
+# target to preprocess a source file
+InternalLogic/Kruskal.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.i
+.PHONY : InternalLogic/Kruskal.cpp.i
+
+InternalLogic/Kruskal.s: InternalLogic/Kruskal.cpp.s
+
+.PHONY : InternalLogic/Kruskal.s
+
+# target to generate assembly for a file
+InternalLogic/Kruskal.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.s
+.PHONY : InternalLogic/Kruskal.cpp.s
 
 InternalLogic/Pathfinding.o: InternalLogic/Pathfinding.cpp.o
 
@@ -230,6 +257,33 @@ InternalLogic/Pathfinding.s: InternalLogic/Pathfinding.cpp.s
 InternalLogic/Pathfinding.cpp.s:
 	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.s
 .PHONY : InternalLogic/Pathfinding.cpp.s
+
+InternalLogic/Prim.o: InternalLogic/Prim.cpp.o
+
+.PHONY : InternalLogic/Prim.o
+
+# target to build an object file
+InternalLogic/Prim.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o
+.PHONY : InternalLogic/Prim.cpp.o
+
+InternalLogic/Prim.i: InternalLogic/Prim.cpp.i
+
+.PHONY : InternalLogic/Prim.i
+
+# target to preprocess a source file
+InternalLogic/Prim.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.i
+.PHONY : InternalLogic/Prim.cpp.i
+
+InternalLogic/Prim.s: InternalLogic/Prim.cpp.s
+
+.PHONY : InternalLogic/Prim.s
+
+# target to generate assembly for a file
+InternalLogic/Prim.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.s
+.PHONY : InternalLogic/Prim.cpp.s
 
 SetUp/Game.o: SetUp/Game.cpp.o
 
@@ -366,6 +420,33 @@ SetUp/main.cpp.s:
 	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/main.cpp.s
 .PHONY : SetUp/main.cpp.s
 
+War.o: War.cpp.o
+
+.PHONY : War.o
+
+# target to build an object file
+War.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/War.cpp.o
+.PHONY : War.cpp.o
+
+War.i: War.cpp.i
+
+.PHONY : War.i
+
+# target to preprocess a source file
+War.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/War.cpp.i
+.PHONY : War.cpp.i
+
+War.s: War.cpp.s
+
+.PHONY : War.s
+
+# target to generate assembly for a file
+War.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/War.cpp.s
+.PHONY : War.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -381,12 +462,18 @@ help:
 	@echo "... Characters/player.o"
 	@echo "... Characters/player.i"
 	@echo "... Characters/player.s"
-	@echo "... Components/ECS.o"
-	@echo "... Components/ECS.i"
-	@echo "... Components/ECS.s"
+	@echo "... InternalLogic/Dijkstra.o"
+	@echo "... InternalLogic/Dijkstra.i"
+	@echo "... InternalLogic/Dijkstra.s"
+	@echo "... InternalLogic/Kruskal.o"
+	@echo "... InternalLogic/Kruskal.i"
+	@echo "... InternalLogic/Kruskal.s"
 	@echo "... InternalLogic/Pathfinding.o"
 	@echo "... InternalLogic/Pathfinding.i"
 	@echo "... InternalLogic/Pathfinding.s"
+	@echo "... InternalLogic/Prim.o"
+	@echo "... InternalLogic/Prim.i"
+	@echo "... InternalLogic/Prim.s"
 	@echo "... SetUp/Game.o"
 	@echo "... SetUp/Game.i"
 	@echo "... SetUp/Game.s"
@@ -402,6 +489,9 @@ help:
 	@echo "... SetUp/main.o"
 	@echo "... SetUp/main.i"
 	@echo "... SetUp/main.s"
+	@echo "... War.o"
+	@echo "... War.i"
+	@echo "... War.s"
 .PHONY : help
 
 

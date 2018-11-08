@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/44/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nyverk/CLionProjects/LOG
+CMAKE_SOURCE_DIR = /home/jonathan/CLionProjects/RepositoryLOG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nyverk/CLionProjects/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LOG.dir/depend.make
@@ -59,120 +59,159 @@ include CMakeFiles/LOG.dir/flags.make
 
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/SetUp/main.cpp.o: ../SetUp/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LOG.dir/SetUp/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/main.cpp.o -c /home/nyverk/CLionProjects/LOG/SetUp/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LOG.dir/SetUp/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/main.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/SetUp/main.cpp
 
 CMakeFiles/LOG.dir/SetUp/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/SetUp/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/SetUp/main.cpp > CMakeFiles/LOG.dir/SetUp/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/SetUp/main.cpp > CMakeFiles/LOG.dir/SetUp/main.cpp.i
 
 CMakeFiles/LOG.dir/SetUp/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/SetUp/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/SetUp/main.cpp -o CMakeFiles/LOG.dir/SetUp/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/SetUp/main.cpp -o CMakeFiles/LOG.dir/SetUp/main.cpp.s
 
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/SetUp/Game.cpp.o: ../SetUp/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LOG.dir/SetUp/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/Game.cpp.o -c /home/nyverk/CLionProjects/LOG/SetUp/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LOG.dir/SetUp/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/Game.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.cpp
 
 CMakeFiles/LOG.dir/SetUp/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/SetUp/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/SetUp/Game.cpp > CMakeFiles/LOG.dir/SetUp/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.cpp > CMakeFiles/LOG.dir/SetUp/Game.cpp.i
 
 CMakeFiles/LOG.dir/SetUp/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/SetUp/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/SetUp/Game.cpp -o CMakeFiles/LOG.dir/SetUp/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.cpp -o CMakeFiles/LOG.dir/SetUp/Game.cpp.s
 
 CMakeFiles/LOG.dir/Characters/player.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/Characters/player.cpp.o: ../Characters/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LOG.dir/Characters/player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/Characters/player.cpp.o -c /home/nyverk/CLionProjects/LOG/Characters/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LOG.dir/Characters/player.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/Characters/player.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/Characters/player.cpp
 
 CMakeFiles/LOG.dir/Characters/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/Characters/player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/Characters/player.cpp > CMakeFiles/LOG.dir/Characters/player.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/Characters/player.cpp > CMakeFiles/LOG.dir/Characters/player.cpp.i
 
 CMakeFiles/LOG.dir/Characters/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/Characters/player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/Characters/player.cpp -o CMakeFiles/LOG.dir/Characters/player.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/Characters/player.cpp -o CMakeFiles/LOG.dir/Characters/player.cpp.s
 
 CMakeFiles/LOG.dir/Characters/enemy.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/Characters/enemy.cpp.o: ../Characters/enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LOG.dir/Characters/enemy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/Characters/enemy.cpp.o -c /home/nyverk/CLionProjects/LOG/Characters/enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LOG.dir/Characters/enemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/Characters/enemy.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/Characters/enemy.cpp
 
 CMakeFiles/LOG.dir/Characters/enemy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/Characters/enemy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/Characters/enemy.cpp > CMakeFiles/LOG.dir/Characters/enemy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/Characters/enemy.cpp > CMakeFiles/LOG.dir/Characters/enemy.cpp.i
 
 CMakeFiles/LOG.dir/Characters/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/Characters/enemy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/Characters/enemy.cpp -o CMakeFiles/LOG.dir/Characters/enemy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/Characters/enemy.cpp -o CMakeFiles/LOG.dir/Characters/enemy.cpp.s
 
 CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o: ../SetUp/TextureManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o -c /home/nyverk/CLionProjects/LOG/SetUp/TextureManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.cpp
 
 CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/SetUp/TextureManager.cpp > CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.cpp > CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.i
 
 CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/SetUp/TextureManager.cpp -o CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.cpp -o CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.s
 
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/SetUp/Map.cpp.o: ../SetUp/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/Map.cpp.o -c /home/nyverk/CLionProjects/LOG/SetUp/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/Map.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.cpp
 
 CMakeFiles/LOG.dir/SetUp/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/SetUp/Map.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/SetUp/Map.cpp > CMakeFiles/LOG.dir/SetUp/Map.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.cpp > CMakeFiles/LOG.dir/SetUp/Map.cpp.i
 
 CMakeFiles/LOG.dir/SetUp/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/SetUp/Map.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/SetUp/Map.cpp -o CMakeFiles/LOG.dir/SetUp/Map.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.cpp -o CMakeFiles/LOG.dir/SetUp/Map.cpp.s
 
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o: ../InternalLogic/Pathfinding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o -c /home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Pathfinding.cpp
 
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.cpp > CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Pathfinding.cpp > CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.i
 
 CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.cpp -o CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Pathfinding.cpp -o CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.s
 
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: CMakeFiles/LOG.dir/flags.make
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.o: ../SetUp/Levels.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LOG.dir/SetUp/Levels.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/Levels.cpp.o -c /home/nyverk/CLionProjects/LOG/SetUp/Levels.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LOG.dir/SetUp/Levels.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/SetUp/Levels.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.cpp
 
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/SetUp/Levels.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/SetUp/Levels.cpp > CMakeFiles/LOG.dir/SetUp/Levels.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.cpp > CMakeFiles/LOG.dir/SetUp/Levels.cpp.i
 
 CMakeFiles/LOG.dir/SetUp/Levels.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/SetUp/Levels.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/SetUp/Levels.cpp -o CMakeFiles/LOG.dir/SetUp/Levels.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.cpp -o CMakeFiles/LOG.dir/SetUp/Levels.cpp.s
 
-CMakeFiles/LOG.dir/Components/ECS.cpp.o: CMakeFiles/LOG.dir/flags.make
-CMakeFiles/LOG.dir/Components/ECS.cpp.o: ../Components/ECS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LOG.dir/Components/ECS.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/Components/ECS.cpp.o -c /home/nyverk/CLionProjects/LOG/Components/ECS.cpp
+CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o: CMakeFiles/LOG.dir/flags.make
+CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o: ../InternalLogic/Dijkstra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Dijkstra.cpp
 
-CMakeFiles/LOG.dir/Components/ECS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/Components/ECS.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nyverk/CLionProjects/LOG/Components/ECS.cpp > CMakeFiles/LOG.dir/Components/ECS.cpp.i
+CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Dijkstra.cpp > CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.i
 
-CMakeFiles/LOG.dir/Components/ECS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/Components/ECS.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nyverk/CLionProjects/LOG/Components/ECS.cpp -o CMakeFiles/LOG.dir/Components/ECS.cpp.s
+CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Dijkstra.cpp -o CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.s
+
+CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o: CMakeFiles/LOG.dir/flags.make
+CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o: ../InternalLogic/Kruskal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Kruskal.cpp
+
+CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Kruskal.cpp > CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.i
+
+CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Kruskal.cpp -o CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.s
+
+CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o: CMakeFiles/LOG.dir/flags.make
+CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o: ../InternalLogic/Prim.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Prim.cpp
+
+CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Prim.cpp > CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.i
+
+CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/InternalLogic/Prim.cpp -o CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.s
+
+CMakeFiles/LOG.dir/War.cpp.o: CMakeFiles/LOG.dir/flags.make
+CMakeFiles/LOG.dir/War.cpp.o: ../War.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/LOG.dir/War.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LOG.dir/War.cpp.o -c /home/jonathan/CLionProjects/RepositoryLOG/War.cpp
+
+CMakeFiles/LOG.dir/War.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LOG.dir/War.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonathan/CLionProjects/RepositoryLOG/War.cpp > CMakeFiles/LOG.dir/War.cpp.i
+
+CMakeFiles/LOG.dir/War.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LOG.dir/War.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonathan/CLionProjects/RepositoryLOG/War.cpp -o CMakeFiles/LOG.dir/War.cpp.s
 
 # Object files for target LOG
 LOG_OBJECTS = \
@@ -184,7 +223,10 @@ LOG_OBJECTS = \
 "CMakeFiles/LOG.dir/SetUp/Map.cpp.o" \
 "CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o" \
 "CMakeFiles/LOG.dir/SetUp/Levels.cpp.o" \
-"CMakeFiles/LOG.dir/Components/ECS.cpp.o"
+"CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o" \
+"CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o" \
+"CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o" \
+"CMakeFiles/LOG.dir/War.cpp.o"
 
 # External object files for target LOG
 LOG_EXTERNAL_OBJECTS =
@@ -197,7 +239,10 @@ LOG: CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o
 LOG: CMakeFiles/LOG.dir/SetUp/Map.cpp.o
 LOG: CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o
 LOG: CMakeFiles/LOG.dir/SetUp/Levels.cpp.o
-LOG: CMakeFiles/LOG.dir/Components/ECS.cpp.o
+LOG: CMakeFiles/LOG.dir/InternalLogic/Dijkstra.cpp.o
+LOG: CMakeFiles/LOG.dir/InternalLogic/Kruskal.cpp.o
+LOG: CMakeFiles/LOG.dir/InternalLogic/Prim.cpp.o
+LOG: CMakeFiles/LOG.dir/War.cpp.o
 LOG: CMakeFiles/LOG.dir/build.make
 LOG: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 LOG: /usr/lib/x86_64-linux-gnu/libGLX.so
@@ -210,7 +255,7 @@ LOG: /usr/lib/x86_64-linux-gnu/libGLU.so
 LOG: /usr/lib/x86_64-linux-gnu/libglut.so
 LOG: /usr/lib/x86_64-linux-gnu/libXi.so
 LOG: CMakeFiles/LOG.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LOG"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable LOG"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LOG.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -223,6 +268,6 @@ CMakeFiles/LOG.dir/clean:
 .PHONY : CMakeFiles/LOG.dir/clean
 
 CMakeFiles/LOG.dir/depend:
-	cd /home/nyverk/CLionProjects/LOG/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nyverk/CLionProjects/LOG /home/nyverk/CLionProjects/LOG /home/nyverk/CLionProjects/LOG/cmake-build-debug /home/nyverk/CLionProjects/LOG/cmake-build-debug /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jonathan/CLionProjects/RepositoryLOG /home/jonathan/CLionProjects/RepositoryLOG /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug /home/jonathan/CLionProjects/RepositoryLOG/cmake-build-debug/CMakeFiles/LOG.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LOG.dir/depend
 
