@@ -12,7 +12,8 @@ void player::init(int posX, int posY) {
     position.y = y = posY;
     p.second = posX / 35;
     p.first = posY /35;
-    contX = contY = 0;
+    contX = contY = attackLeft = attackRight = 0;
+    attackR = attackL = false;
     stat = TextureManager::LoadTexture("../Assets/static.bmp");
     right1 = TextureManager::LoadTexture("../Assets/right1.bmp");
     right2 = TextureManager::LoadTexture("../Assets/right2.bmp");
@@ -24,6 +25,15 @@ void player::init(int posX, int posY) {
     up2 = TextureManager::LoadTexture("../Assets/up2.bmp");
     up3 = TextureManager::LoadTexture("../Assets/up3.bmp");
     up4 = TextureManager::LoadTexture("../Assets/up4.bmp");
+    down1 = TextureManager::LoadTexture("../Assets/Down1.bmp");
+    down2 = TextureManager::LoadTexture("../Assets/Down2.bmp");
+    down3 = TextureManager::LoadTexture("../Assets/Down3.bmp");
+    attackL1 = TextureManager::LoadTexture("../Assets/AttackL1.bmp");
+    attackL2 = TextureManager::LoadTexture("../Assets/AttackL2.bmp");
+    attackL3 = TextureManager::LoadTexture("../Assets/AttackL3.bmp");
+    attackR1 = TextureManager::LoadTexture("../Assets/AttackR1.bmp");
+    attackR2 = TextureManager::LoadTexture("../Assets/AttackR2.bmp");
+    attackR3 = TextureManager::LoadTexture("../Assets/AttackR3.bmp");
     map = new Map();
     pathfinding = new Pathfinding();
 }
@@ -83,11 +93,12 @@ void player::move() {
 void player::render() {
 
     map->DrawMap();
-    if(!rightB && !leftB && !upB && !downB) {
-        //SDL_RenderCopy(Game::renderer, stat, NULL, &position);
+    if(!rightB && !leftB && !upB && !downB && !attackL && !attackR) {
+        SDL_RenderCopy(Game::renderer, stat, NULL, &position);
     }else{
         animation();
     }
+    attack();
 }
 
 void player::animation() {
@@ -101,7 +112,10 @@ void player::animation() {
         if(right > 10 && right <=15){
             SDL_RenderCopy(Game::renderer, right3, NULL, &position);
         }
-        if (right == 15){
+        if(right > 15 && right <= 20){
+            SDL_RenderCopy(Game::renderer, right2, NULL, &position);
+        }
+        if (right == 20){
             right = 0;
         }
     }
@@ -115,7 +129,10 @@ void player::animation() {
         if(left > 10 && left <=15){
             SDL_RenderCopy(Game::renderer, left3, NULL, &position);
         }
-        if (left == 15){
+        if(left > 15 && left <= 20){
+            SDL_RenderCopy(Game::renderer, left2, NULL, &position);
+        }
+        if (left == 20){
             left = 0;
         }
     }
@@ -132,22 +149,28 @@ void player::animation() {
         if(up > 15 && up <= 20){
             SDL_RenderCopy(Game::renderer, up4, NULL, &position);
         }
-        if (up == 20){
+        if(up > 20 && up <= 25){
+            SDL_RenderCopy(Game::renderer, up3, NULL, &position);
+        }
+        if(up > 25 && up <= 30){
+            SDL_RenderCopy(Game::renderer, up2, NULL, &position);
+        }
+        if (up == 30){
             up = 0;
         }
     }
     if(downB){
         if(down <= 5){
-            SDL_RenderCopy(Game::renderer, stat, NULL, &position);
+            SDL_RenderCopy(Game::renderer, down1, NULL, &position);
         }
         if(down > 5 && down <= 10){
-            SDL_RenderCopy(Game::renderer, stat, NULL, &position);
+            SDL_RenderCopy(Game::renderer, down2, NULL, &position);
         }
         if(down > 10 && down <= 15){
-            SDL_RenderCopy(Game::renderer, stat, NULL, &position);
+            SDL_RenderCopy(Game::renderer, down3, NULL, &position);
         }
         if(down > 15 && down <= 20){
-            SDL_RenderCopy(Game::renderer, stat, NULL, &position);
+            SDL_RenderCopy(Game::renderer, down2, NULL, &position);
         }
         if (down == 20){
             down = 0;
@@ -217,12 +240,57 @@ void player::update() {
 
 void player::detectEnemy() {
     if(Map::map[position.y/35][(position.x + 35)/35] > 25 && Map::map[position.y/35][(position.x + 35)/35] < 73){
-
+        attackL = false;
+        attackR = true;
+        attackRight++;
     }else if(Map::map[position.y/35][(position.x - 35)/35] > 25 && Map::map[position.y/35][(position.x - 35)/35] < 73){
-
+        attackL = true;
+        attackR = false;
+        attackL++;
     }else if(Map::map[(position.y - 35)/35][position.x/35] > 25 && Map::map[(position.y - 35)/35][position.x/35] < 73){
-
+        attackL = false;
+        attackR = true;
+        attackRight++;
     }else if(Map::map[(position.y + 35)/35][position.x/35] > 25 && Map::map[(position.y + 35)/35][position.x/35] < 73){
-        
+        attackL = true;
+        attackR = false;
+        attackL++;
+    }
+}
+
+void player::attack() {
+    if(attackL){
+        if(attackLeft <= 5){
+            SDL_RenderCopy(Game::renderer, attackL1, NULL, &position);
+        }
+        if(attackLeft > 5 && attackLeft <= 10){
+            SDL_RenderCopy(Game::renderer, attackL2, NULL, &position);
+        }
+        if(attackLeft > 10 && attackLeft <=15){
+            SDL_RenderCopy(Game::renderer, attackL3, NULL, &position);
+        }
+        if(attackLeft > 15 && attackLeft <= 20){
+            SDL_RenderCopy(Game::renderer, attackL2, NULL, &position);
+        }
+        if (attackLeft == 20){
+            attackLeft = 0;
+        }
+    }
+    if (attackR){
+        if(attackRight <= 5){
+            SDL_RenderCopy(Game::renderer, attackR1, NULL, &position);
+        }
+        if(attackRight > 5 && attackRight <= 10){
+            SDL_RenderCopy(Game::renderer, attackR2, NULL, &position);
+        }
+        if(attackRight > 10 && attackRight <=15){
+            SDL_RenderCopy(Game::renderer, attackR3, NULL, &position);
+        }
+        if(attackRight > 15 && attackRight <= 20){
+            SDL_RenderCopy(Game::renderer, attackR2, NULL, &position);
+        }
+        if (attackRight == 20){
+            attackRight = 0;
+        }
     }
 }

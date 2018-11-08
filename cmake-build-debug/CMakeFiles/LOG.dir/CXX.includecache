@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/nyverk/CLionProjects/LOG/Characters/player.cpp
-player.h
-/home/nyverk/CLionProjects/LOG/Characters/player.h
-../SetUp/TextureManager.h
-/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
-../SetUp/Game.h
-/home/nyverk/CLionProjects/LOG/SetUp/Game.h
-../SetUp/Levels.h
-/home/nyverk/CLionProjects/LOG/SetUp/Levels.h
-
 /home/nyverk/CLionProjects/LOG/Characters/player.h
 iostream
 -
@@ -42,6 +32,12 @@ iostream
 ../SetUp/Map.h
 /home/nyverk/CLionProjects/LOG/SetUp/Map.h
 
+/home/nyverk/CLionProjects/LOG/SetUp/Game.cpp
+Game.h
+/home/nyverk/CLionProjects/LOG/SetUp/Game.h
+TextureManager.h
+/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
+
 /home/nyverk/CLionProjects/LOG/SetUp/Game.h
 iostream
 -
@@ -55,6 +51,12 @@ SDL_image.h
 /home/nyverk/CLionProjects/LOG/Characters/player.h
 Map.h
 /home/nyverk/CLionProjects/LOG/SetUp/Map.h
+TextureManager.h
+/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
+
+/home/nyverk/CLionProjects/LOG/SetUp/Levels.cpp
+Levels.h
+/home/nyverk/CLionProjects/LOG/SetUp/Levels.h
 
 /home/nyverk/CLionProjects/LOG/SetUp/Levels.h
 Game.h
@@ -69,6 +71,8 @@ SDL.h
 /home/nyverk/CLionProjects/LOG/SetUp/TextureManager.h
 SDL.h
 /home/nyverk/CLionProjects/LOG/SetUp/SDL.h
+Map.h
+/home/nyverk/CLionProjects/LOG/SetUp/Map.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

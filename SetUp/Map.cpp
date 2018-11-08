@@ -1,8 +1,7 @@
-#include <iostream>
 #include "Map.h"
 #include "TextureManager.h"
-#include "Game.h"
 #include "Levels.h"
+#include <iostream>
 
 using namespace std;
 
@@ -26,11 +25,15 @@ int Map::map[15][36] = {
 Map::Map() {
 
     tree1 = TextureManager::LoadTexture("../Assets/tree1.bmp");
+    tree2 = TextureManager::LoadTexture("../Assets/tree2.bmp");
+    tree3 = TextureManager::LoadTexture("../Assets/tree3.bmp");
     home = TextureManager::LoadTexture("../Assets/Home.bmp");
     enemy = TextureManager::LoadTexture("../Assets/enemy.bmp");
+    tower = TextureManager::LoadTexture("../Assets/tower.bmp");
     obstacule1 = TextureManager::LoadTexture("../Assets/static.bmp");
     position.h = position.w = 35;
-    position.x = position.y = 0;
+    position.x = position.y = trees = 0;
+    game = new Game;
     if(Levels::Level == 1){
         Gem = TextureManager::LoadTexture("../Assets/Gem1.bmp");
         if(Levels::easy) {
@@ -92,10 +95,10 @@ Map::Map() {
             LoadMap(lvl6E);
         }
         if(Levels::medium) {
-            //LoadMap(lvl6M);
+            LoadMap(lvl6M);
         }
         if(Levels::hard) {
-            //LoadMap(lvl6H);
+            LoadMap(lvl6H);
         }
     }
 }
@@ -114,12 +117,25 @@ void Map::DrawMap() {
     int type = 0;
     for (int row = 0; row < 15; row++) {
         for (int column = 0; column < 36; column++) {
+            if(trees == 3){
+                trees = 0;
+            }
             type = Map::map[row][column];
             position.x = column * 35;
             position.y = row * 35;
             switch (type) {
                 case 1:
-                    TextureManager::Draw(tree1, position);
+                    if(trees == 0) {
+                        TextureManager::Draw(tree1, position);
+                    }else if(trees == 1){
+                        TextureManager::Draw(tree2, position);
+                    }else{
+                        TextureManager::Draw(tree3, position);
+                    }
+                    trees++;
+                    break;
+                case 3:
+                    TextureManager::Draw(tower, position);
                     break;
                 case 9:
                     TextureManager::Draw(Gem, position);
@@ -129,8 +145,9 @@ void Map::DrawMap() {
                     TextureManager::Draw(enemy, position);
                     position.w = 35;
                     break;
-                case 15:
-                    TextureManager::Draw(obstacule1, position);
+                case 10 ... 25:
+                        //game->createSoldiers(type, position.x, position.y);
+
                     break;
                 case 100:
                     position.w = 45;
@@ -141,4 +158,5 @@ void Map::DrawMap() {
             }
         }
     }
+    reg = 1;
 }
