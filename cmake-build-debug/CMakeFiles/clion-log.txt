@@ -1,23 +1,4 @@
-/snap/clion/44/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nyverk/GREIVIN/LOG
--- The C compiler identification is GNU 7.3.0
--- The CXX compiler identification is GNU 7.3.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
--- Checking for one of the modules 'sdl2'
--- Checking for one of the modules 'SDL2_image>=2.0.0'
--- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
--- Found GLUT: /usr/lib/x86_64-linux-gnu/libglut.so  
+/snap/clion/44/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nyverk/CLionProjects/LOG
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/nyverk/GREIVIN/LOG/cmake-build-debug
+-- Build files have been written to: /home/nyverk/CLionProjects/LOG/cmake-build-debug

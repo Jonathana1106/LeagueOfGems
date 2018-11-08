@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o"
   "CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
   "CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
+  "CMakeFiles/LOG.dir/SetUp/Levels.cpp.o"
+  "CMakeFiles/LOG.dir/Components/ECS.cpp.o"
   "LOG.pdb"
   "LOG"
 )

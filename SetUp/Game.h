@@ -23,12 +23,9 @@ public:
     SDL_Window *window1;
     static SDL_Renderer *renderer;
     SDL_Texture *background;
-    SDL_Rect position1, position2, position3, position5, position6, position7, position9, position10, position11, position13,
-    position14, position15, position17, position18, position19, position21, position22, position23,  position25, position26,
-    position27, position29, position30, position31;
-    player *player1;
+    SDL_Rect position;
+    player *player1, *player2;
     Map *map;
-
 };
 
 #endif //LOG_GAME_H

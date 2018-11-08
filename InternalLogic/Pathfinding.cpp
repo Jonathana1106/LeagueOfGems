@@ -1,7 +1,3 @@
-//
-// Created by elias on 04/11/18.
-//
-
 #include <zconf.h>
 #include "Pathfinding.h"
 
@@ -53,7 +49,6 @@ double Pathfinding::calculateHValue(int row, int col, Pair dest)
 // to destination
 std::stack<Pair> Pathfinding::tracePath(cell cellDetails[][COL], Pair dest)
 {
-    printf ("\nThe Path is ");
     int row = dest.first;
     int col = dest.second;
 
@@ -76,7 +71,6 @@ std::stack<Pair> Pathfinding::tracePath(cell cellDetails[][COL], Pair dest)
     {
         std::pair<int,int> p = Path_2.top();
         Path_2.pop();
-        printf("-> (%d,%d) ",p.first,p.second);
     }
 
     return Path;
@@ -91,14 +85,12 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
     // If the source is out of range
     if (isValid (src.first, src.second) == false)
     {
-        printf ("Source is invalid\n");
         return final_path;
     }
 
     // If the destination is out of range
     if (isValid (dest.first, dest.second) == false)
     {
-        printf ("Destination is invalid\n");
         return final_path;
     }
 
@@ -106,14 +98,12 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
     if (isUnBlocked(grid, src.first, src.second) == false ||
         isUnBlocked(grid, dest.first, dest.second) == false)
     {
-        printf ("Source or the destination is blocked\n");
         return final_path;
     }
 
     // If the destination cell is the same as source cell
     if (isDestination(src.first, src.second, dest) == true)
     {
-        printf ("We are already at the destination\n");
         return final_path;
     }
 
@@ -211,7 +201,6 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
                 // Set the Parent of the destination cell
                 cellDetails[i - 1][j].parent_i = i;
                 cellDetails[i - 1][j].parent_j = j;
-                printf("The destination cell is found\n");
                 final_path = tracePath(cellDetails, dest);
                 foundDest = true;
                 return final_path;
@@ -258,7 +247,6 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
                 // Set the Parent of the destination cell
                 cellDetails[i + 1][j].parent_i = i;
                 cellDetails[i + 1][j].parent_j = j;
-                printf("The destination cell is found\n");
                 final_path = tracePath(cellDetails, dest);
                 foundDest = true;
                 return final_path;
@@ -303,7 +291,6 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
                 // Set the Parent of the destination cell
                 cellDetails[i][j + 1].parent_i = i;
                 cellDetails[i][j + 1].parent_j = j;
-                printf("The destination cell is found\n");
                 final_path = tracePath(cellDetails, dest);
                 foundDest = true;
                 return final_path;
@@ -351,7 +338,6 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
                 // Set the Parent of the destination cell
                 cellDetails[i][j - 1].parent_i = i;
                 cellDetails[i][j - 1].parent_j = j;
-                std::cout << "The destination cell is found" << std::endl;
                 final_path = tracePath(cellDetails, dest);
                 foundDest = true;
                 return final_path;
@@ -602,7 +588,6 @@ std::stack<Pair> Pathfinding::aStarSearch(int grid[][COL], Pair src, Pair dest)
     // reach the destiantion cell. This may happen when the
     // there is no way to destination cell (due to blockages)
     if (!foundDest)
-        printf("Failed to find the Destination Cell\n");
 
     return final_path;
 
@@ -645,7 +630,7 @@ void Pathfinding::walk(std::stack<Pair> path, int soldier)
 
         }
         update_grid(refresh_grid);
-        map->LoadMap(refresh_grid);
+        //map->LoadMap(refresh_grid);
         map->DrawMap();
         //usleep(2000000);
     }
@@ -687,7 +672,7 @@ std::stack<Pair> Pathfinding::start(int source_x, int source_y, int mouse_x, int
     src = std::make_pair(source_x, source_y);
     dest = std::make_pair(mouse_x, mouse_y);
 
-    this->path_destiny = Pathfinding::aStarSearch(map->lvl1, src, dest);
+    this->path_destiny = Pathfinding::aStarSearch(Map::map, src, dest);
     return path_destiny;
     //Pathfinding::walk(path_destiny, 14);
 

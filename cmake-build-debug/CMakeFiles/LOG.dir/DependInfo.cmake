@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nyverk/GREIVIN/LOG/Characters/enemy.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/Characters/enemy.cpp.o"
-  "/home/nyverk/GREIVIN/LOG/Characters/player.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/Characters/player.cpp.o"
-  "/home/nyverk/GREIVIN/LOG/InternalLogic/Pathfinding.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
-  "/home/nyverk/GREIVIN/LOG/SetUp/Game.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/Game.cpp.o"
-  "/home/nyverk/GREIVIN/LOG/SetUp/Map.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
-  "/home/nyverk/GREIVIN/LOG/SetUp/TextureManager.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o"
-  "/home/nyverk/GREIVIN/LOG/SetUp/main.cpp" "/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/main.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/Characters/enemy.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/Characters/enemy.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/Characters/player.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/Characters/player.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/Components/ECS.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/Components/ECS.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/InternalLogic/Pathfinding.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/InternalLogic/Pathfinding.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/SetUp/Game.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/Game.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/SetUp/Levels.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/Levels.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/SetUp/Map.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/Map.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/SetUp/TextureManager.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/TextureManager.cpp.o"
+  "/home/nyverk/CLionProjects/LOG/SetUp/main.cpp" "/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir/SetUp/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

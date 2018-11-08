@@ -48,10 +48,10 @@ RM = /snap/clion/44/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nyverk/GREIVIN/LOG
+CMAKE_SOURCE_DIR = /home/nyverk/CLionProjects/LOG
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nyverk/GREIVIN/LOG/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nyverk/CLionProjects/LOG/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles /home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ Characters/player.cpp.s:
 	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Characters/player.cpp.s
 .PHONY : Characters/player.cpp.s
 
+Components/ECS.o: Components/ECS.cpp.o
+
+.PHONY : Components/ECS.o
+
+# target to build an object file
+Components/ECS.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Components/ECS.cpp.o
+.PHONY : Components/ECS.cpp.o
+
+Components/ECS.i: Components/ECS.cpp.i
+
+.PHONY : Components/ECS.i
+
+# target to preprocess a source file
+Components/ECS.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Components/ECS.cpp.i
+.PHONY : Components/ECS.cpp.i
+
+Components/ECS.s: Components/ECS.cpp.s
+
+.PHONY : Components/ECS.s
+
+# target to generate assembly for a file
+Components/ECS.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/Components/ECS.cpp.s
+.PHONY : Components/ECS.cpp.s
+
 InternalLogic/Pathfinding.o: InternalLogic/Pathfinding.cpp.o
 
 .PHONY : InternalLogic/Pathfinding.o
@@ -230,6 +257,33 @@ SetUp/Game.s: SetUp/Game.cpp.s
 SetUp/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Game.cpp.s
 .PHONY : SetUp/Game.cpp.s
+
+SetUp/Levels.o: SetUp/Levels.cpp.o
+
+.PHONY : SetUp/Levels.o
+
+# target to build an object file
+SetUp/Levels.cpp.o:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Levels.cpp.o
+.PHONY : SetUp/Levels.cpp.o
+
+SetUp/Levels.i: SetUp/Levels.cpp.i
+
+.PHONY : SetUp/Levels.i
+
+# target to preprocess a source file
+SetUp/Levels.cpp.i:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Levels.cpp.i
+.PHONY : SetUp/Levels.cpp.i
+
+SetUp/Levels.s: SetUp/Levels.cpp.s
+
+.PHONY : SetUp/Levels.s
+
+# target to generate assembly for a file
+SetUp/Levels.cpp.s:
+	$(MAKE) -f CMakeFiles/LOG.dir/build.make CMakeFiles/LOG.dir/SetUp/Levels.cpp.s
+.PHONY : SetUp/Levels.cpp.s
 
 SetUp/Map.o: SetUp/Map.cpp.o
 
@@ -327,12 +381,18 @@ help:
 	@echo "... Characters/player.o"
 	@echo "... Characters/player.i"
 	@echo "... Characters/player.s"
+	@echo "... Components/ECS.o"
+	@echo "... Components/ECS.i"
+	@echo "... Components/ECS.s"
 	@echo "... InternalLogic/Pathfinding.o"
 	@echo "... InternalLogic/Pathfinding.i"
 	@echo "... InternalLogic/Pathfinding.s"
 	@echo "... SetUp/Game.o"
 	@echo "... SetUp/Game.i"
 	@echo "... SetUp/Game.s"
+	@echo "... SetUp/Levels.o"
+	@echo "... SetUp/Levels.i"
+	@echo "... SetUp/Levels.s"
 	@echo "... SetUp/Map.o"
 	@echo "... SetUp/Map.i"
 	@echo "... SetUp/Map.s"

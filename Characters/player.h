@@ -6,18 +6,23 @@
 #include <SDL_events.h>
 #include "SDL.h"
 #include "../SetUp/Map.h"
-#include "../Internal_logic/Pathfinding.h"
+#include "../InternalLogic/Pathfinding.h"
 
 class player {
 
 public:
-    void init();
+    void init(int posX, int posY);
     void move();
     void render();
-    int x, y;
-    int contX, contY, reg;
+    void animation();
+    void getGem();
+    void update();
+    void detectEnemy();
+
+    int x, y, contX, contY, right, left, up, down;
     SDL_Rect position;
-    SDL_Texture *user1, *user2, *user3;
+    SDL_Texture *stat, *right1, *right2, *right3, *left1, *left2, *left3, *up1, *up2, *up3, *up4;
+    bool rightB, leftB, upB, downB;
 
     std::stack<Pair> path_destiny;
     std::pair<int, int> p;

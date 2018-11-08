@@ -3,7 +3,7 @@ project(LOG)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LOG SetUp/main.cpp SetUp/Game.cpp SetUp/Game.h Characters/player.cpp Characters/player.h Characters/enemy.cpp Characters/enemy.h SetUp/TextureManager.cpp SetUp/TextureManager.h SetUp/Map.cpp SetUp/Map.h InternalLogic/Pathfinding.cpp InternalLogic/Pathfinding.h)
+add_executable(LOG SetUp/main.cpp SetUp/Game.cpp SetUp/Game.h Characters/player.cpp Characters/player.h Characters/enemy.cpp Characters/enemy.h SetUp/TextureManager.cpp SetUp/TextureManager.h SetUp/Map.cpp SetUp/Map.h InternalLogic/Pathfinding.cpp InternalLogic/Pathfinding.h SetUp/Levels.cpp SetUp/Levels.h Components/ECS.cpp Components/ECS.h Components/Components.h Components/PositionComponent.h Components/SpriteComponent.h)
 
 INCLUDE(FindPkgConfig)
 

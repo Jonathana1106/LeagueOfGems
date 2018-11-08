@@ -1,7 +1,3 @@
-//
-// Created by elias on 04/11/18.
-//
-
 #ifndef LOG_PATHFINDING_H
 #define LOG_PATHFINDING_H
 
@@ -51,6 +47,7 @@ public:
     /* Description of the Grid-
      0 --> The cell is not blocked
      1 --> The cell is blocked
+     9 --> Gems
      10 to 25 --> Soldiers
      26 to 71 --> Enemies
      */

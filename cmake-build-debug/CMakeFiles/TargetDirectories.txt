@@ -1,3 +1,3 @@
-/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/nyverk/GREIVIN/LOG/cmake-build-debug/CMakeFiles/LOG.dir
+/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nyverk/CLionProjects/LOG/cmake-build-debug/CMakeFiles/LOG.dir
