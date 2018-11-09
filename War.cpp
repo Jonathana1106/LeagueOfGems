@@ -4,6 +4,7 @@
 
 #include <stack>
 #include "War.h"
+#include "SetUp/Map.h"
 
 War::War(int numberEnemies, int numberSoldiers, int difficult) {
 

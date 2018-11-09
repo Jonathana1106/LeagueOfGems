@@ -2,7 +2,7 @@
 //#include <SDL_ttf.h>
 //#include <SDL_opengles2_gl2.h>
 
-int Levels::Level = 6;
+int Levels::Level = 1;
 bool Levels::easy = false;
 bool Levels::medium = false;
 bool Levels::hard = false;

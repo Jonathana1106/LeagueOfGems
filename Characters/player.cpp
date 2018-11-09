@@ -40,54 +40,55 @@ void player::init(int posX, int posY, int ID) {
 }
 
 void player::move() {
-
-    if (position.x < p.second * 35) {
-        contX++;
-        left = up = down = 0;
-        right++;
-        leftB = upB = downB = false;
-        rightB = true;
-        if (contX % 10 == 0) {
-            position.x++;
+    if(!isattacking) {
+        if (position.x < p.second * 35) {
+            contX++;
+            left = up = down = 0;
+            right++;
+            leftB = upB = downB = false;
+            rightB = true;
+            if (contX % 10 == 0) {
+                position.x++;
+            }
         }
-    }
 
-    if (position.x > p.second * 35) {
-        contX++;
-        right = up = down = 0;
-        left++;
-        rightB = upB = downB = false;
-        leftB = true;
-        if (contX % 10 == 0) {
-            position.x--;
+        if (position.x > p.second * 35) {
+            contX++;
+            right = up = down = 0;
+            left++;
+            rightB = upB = downB = false;
+            leftB = true;
+            if (contX % 10 == 0) {
+                position.x--;
+            }
         }
-    }
 
-    if (position.y < p.first * 35) {
-        contY++;
-        left = right = up = 0;
-        down++;
-        leftB = rightB = upB = false;
-        downB = true;
-        if (contY % 10 == 0) {
-            position.y++;
+        if (position.y < p.first * 35) {
+            contY++;
+            left = right = up = 0;
+            down++;
+            leftB = rightB = upB = false;
+            downB = true;
+            if (contY % 10 == 0) {
+                position.y++;
+            }
         }
-    }
 
-    if (position.y > p.first * 35) {
-        contY++;
-        left = right = down = 0;
-        up++;
-        leftB = rightB = downB = false;
-        upB = true;
-        if (contY % 10 == 0) {
-            position.y--;
+        if (position.y > p.first * 35) {
+            contY++;
+            left = right = down = 0;
+            up++;
+            leftB = rightB = downB = false;
+            upB = true;
+            if (contY % 10 == 0) {
+                position.y--;
+            }
         }
-    }
 
-    if (position.y == (y / 35) * 35 && position.x == (x / 35) * 35) {
-        rightB = leftB = upB = downB = false;
-        right = left = up = down = 0;
+        if (position.y == (y / 35) * 35 && position.x == (x / 35) * 35) {
+            rightB = leftB = upB = downB = false;
+            right = left = up = down = 0;
+        }
     }
 }
 
@@ -251,7 +252,7 @@ void player::detectEnemy() {
     if (Map::map[position.y / 35][(position.x + 35) / 35] > 25 &&
         Map::map[position.y / 35][(position.x + 35) / 35] < 73) {
         enemy = Map::map[position.y / 35][(position.x + 35) / 35];
-        leftB = rightB = downB = upB = false;
+        isattacking = true;
         attackL = false;
         attackR = true;
         attackRight++;
@@ -260,7 +261,7 @@ void player::detectEnemy() {
     } else if (Map::map[position.y / 35][(position.x - 35) / 35] > 25 &&
                Map::map[position.y / 35][(position.x - 35) / 35] < 73) {
         enemy = Map::map[position.y / 35][(position.x - 35) / 35];
-        leftB = rightB = downB = upB = false;
+        isattacking = true;
         attackL = true;
         attackR = false;
         attackLeft++;
@@ -268,7 +269,7 @@ void player::detectEnemy() {
     } else if (Map::map[(position.y - 35) / 35][position.x / 35] > 25 &&
                Map::map[(position.y - 35) / 35][position.x / 35] < 73) {
         enemy = Map::map[(position.y - 35) / 35][position.x / 35];
-        leftB = rightB = downB = upB = false;
+        isattacking = true;
         attackL = false;
         attackR = true;
         attackRight++;
@@ -276,7 +277,7 @@ void player::detectEnemy() {
     } else if (Map::map[(position.y + 35) / 35][position.x / 35] > 25 &&
                Map::map[(position.y + 35) / 35][position.x / 35] < 73) {
         enemy = Map::map[(position.y + 35) / 35][position.x / 35];
-        leftB = rightB = downB = upB = false;
+        isattacking = true;
         attackL = true;
         attackR = false;
         attackLeft++;
@@ -290,54 +291,92 @@ void player::attack() {
         if (attackLeft <= 100) {
             SDL_RenderCopy(Game::renderer, attackL1, NULL, &position);
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
         }
         if (attackLeft > 100 && attackLeft <= 200) {
             SDL_RenderCopy(Game::renderer, attackL2, NULL, &position);
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
         }
         if (attackLeft > 200 && attackLeft <= 300) {
             SDL_RenderCopy(Game::renderer, attackL3, NULL, &position);
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
         }
         if (attackLeft > 300 && attackLeft <= 400) {
             SDL_RenderCopy(Game::renderer, attackL2, NULL, &position);
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
         }
         if (attackLeft == 400) {
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
             attackLeft = 0;
         }
     }
     if (attackR) {
         if (attackRight <= 100) {
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
             SDL_RenderCopy(Game::renderer, attackR1, NULL, &position);
         }
         if (attackRight > 100 && attackRight <= 200) {
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
             SDL_RenderCopy(Game::renderer, attackR2, NULL, &position);
         }
         if (attackRight > 200 && attackRight <= 300) {
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
             SDL_RenderCopy(Game::renderer, attackR3, NULL, &position);
         }
         if (attackRight > 300 && attackRight <= 400) {
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
             SDL_RenderCopy(Game::renderer, attackR2, NULL, &position);
         }
         if (attackRight == 400) {
             std::cout << enemy << std::endl;
-            war->attackEnemy(id,enemy - 25);
+            if(war->attackEnemy(id,enemy - 25)){
+                killEnemy();
+            }
             attackRight = 0;
         }
+    }
+}
+
+void player::killEnemy() {
+    for(int i=0; i<15; i++){
+        for(int j=0; j<36; j++){
+            if(Map::map[i][j] == enemy){
+                Map::map[i][j] = 0;
+                isattacking = false;
+            }
+        }
+
+    }
+    if(attackL){
+        attackL = false;
+    }
+    if(attackR){
+        attackR = false;
     }
 }

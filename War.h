@@ -11,7 +11,7 @@
 struct soldier{
 
     int life = 125;
-    int attack = 10;
+    int attack = 1;
     int fastAtack;
     int ID ;
     int location;
@@ -19,7 +19,7 @@ struct soldier{
 };
 
 struct enemy{
-    int life = 50;
+    int life = 1000;
     int attack = 15;
     int timeLife;
     int killedSoldier;

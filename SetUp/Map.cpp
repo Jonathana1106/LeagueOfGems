@@ -117,22 +117,13 @@ void Map::DrawMap() {
     int type = 0;
     for (int row = 0; row < 15; row++) {
         for (int column = 0; column < 36; column++) {
-            if(trees == 3){
-                trees = 0;
-            }
+
             type = Map::map[row][column];
             position.x = column * 35;
             position.y = row * 35;
             switch (type) {
                 case 1:
-                    if(trees == 0) {
-                        TextureManager::Draw(tree1, position);
-                    }else if(trees == 1){
-                        TextureManager::Draw(tree2, position);
-                    }else{
-                        TextureManager::Draw(tree3, position);
-                    }
-                    trees++;
+                    TextureManager::Draw(tree1, position);
                     break;
                 case 3:
                     TextureManager::Draw(tower, position);
