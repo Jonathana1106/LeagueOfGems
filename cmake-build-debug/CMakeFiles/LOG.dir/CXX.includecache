@@ -42,6 +42,14 @@ iostream
 ../SetUp/Map.h
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.cpp
+Game.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.h
+TextureManager.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
+Levels.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
+
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.h
 iostream
 -
@@ -58,6 +66,10 @@ Map.h
 TextureManager.h
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
 
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.cpp
+Levels.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
+
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
 Game.h
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Game.h
@@ -65,6 +77,16 @@ TextureManager.h
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
 ../War.h
 /home/jonathan/CLionProjects/RepositoryLOG/War.h
+
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.cpp
+Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
+TextureManager.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/TextureManager.h
+Levels.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
+iostream
+-
 
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 SDL.h
@@ -74,6 +96,22 @@ SDL.h
 SDL.h
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/SDL.h
 Map.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
+
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/main.cpp
+iostream
+-
+Levels.h
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/Levels.h
+thread
+/home/jonathan/CLionProjects/RepositoryLOG/SetUp/thread
+
+/home/jonathan/CLionProjects/RepositoryLOG/War.cpp
+stack
+-
+War.h
+/home/jonathan/CLionProjects/RepositoryLOG/War.h
+SetUp/Map.h
 /home/jonathan/CLionProjects/RepositoryLOG/SetUp/Map.h
 
 /home/jonathan/CLionProjects/RepositoryLOG/War.h

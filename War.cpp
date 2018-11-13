@@ -43,7 +43,9 @@ bool War::attackEnemy(int soldier, int enemy) {
         std::cout << "Enemy is not alive" << std::endl;
         return true;
     } else{
-        tempEnemies[enemy - 1].life -= Soldiers[soldier - 1].attack;
+        if(reg % 15 == 0) {
+            tempEnemies[enemy - 1].life -= Soldiers[soldier - 1].attack;
+        }
         return tempEnemies[enemy - 1].life <= 0;
     }
 

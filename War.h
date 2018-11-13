@@ -35,6 +35,7 @@ private:
     int numsoldiers;
     int numenemies;
     int level;
+    int reg = 0;
 
     enemy* tempEnemies;
     enemy easyEnemies[20];
